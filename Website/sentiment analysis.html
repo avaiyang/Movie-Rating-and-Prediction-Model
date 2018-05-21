@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Sentiment Analysis</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/vendor.css">  
+   <link rel="stylesheet" href="css/main.css">  
+
+   <!-- script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+
+</head>
+
+<body id="top">
+
+
+<!-- Sentiment Analysis
+   ================================================== -->
+   <section id="home" style="background-image: url(./images/sent1.jpg);">
+    <div class="overlay"></div>
+    <div class="home-content-table">  
+       <div class="home-content-tablecell">
+        <div class="row">
+          <div class="col-twelve">            
+            <h3 class="animate-intro"></h3>
+            <h1 class="animate-intro">
+              Sentiment <br>
+              Analysis
+            </h1> 
+            <div class="more animate-intro">
+              <a class="smoothscroll button stroke" href="#Architecture">
+                Learn More
+              </a>
+            </div>    
+          </div> <!-- end col-twelve --> 
+        </div> <!-- end row --> 
+       </div> <!-- end home-content-tablecell -->        
+    </div> <!-- end home-content-table -->
+   </section> <!-- end home -->
+
+<!-- Architecture
+   ================================================== -->
+   <section id="Architecture">
+   <section id="about">
+      <div class="col-full">
+        <h3 class="animate-this">Architecture</h3>
+        <img src="images/ArchiTweet.png" alt="Comparison" style="width:90%;height:90%;">
+   </section> <!-- end about -->
+ </section>
+
+
+<!-- Why is Sentiment Analysis Important?
+   ================================================== -->
+   <section id="about">
+    <div class="row about-wrap">
+      <div class="col-full">
+        <div class="about-profile-bg"></div>
+        <div class="intro">
+          <h3 class="animate-this">Why is Sentiment Analysis Important?</h3>
+          <p  class="lead animate-this">
+            In public opinion, Is the movie review positive or negative?  <br>
+            Is the movie worth being nominated ?  <br>
+            Based on a sample of tweets collected, should the movie win Oscar’s ?<br>
+            </p>
+        </div>   
+      </div> <!-- end col-full  -->
+    </div> <!-- end about-wrap  -->
+   </section> <!-- end about -->
+
+<!-- Why Twitter Data?
+   ================================================== -->
+   <section id="contact">
+    <div class="overlay"></div>
+    <div class="row narrow section-intro with-bottom-sep animate-this">
+      <div class="col-twelve">
+        <h3 class="animate-this" style="color: white; font-size: 30px">Why Twitter Data?</h3>
+        <p  class="lead">
+            Popular microblogging site <br>
+            Short Text Messages of 140 characters <br>
+            240+ million active users <br>
+            500 million tweets are generated everyday <br>
+            Twitter audience varies from common man to celebrities <br>
+            Tweets are small in length and unambiguous<br>
+            </p>
+      </div> 
+    </div> <!-- end section-intro -->
+  </section> <!-- end contact -->
+
+
+<!-- Score Calculation and Ranking
+   ================================================== -->
+   <section id="about">
+    <div class="row about-wrap">
+      <div class="col-full">
+        <div class="about-profile-bg"></div>
+        <div class="intro">
+          <h3 class="animate-this">Score Calculation and Ranking</h3>
+          <p  class="lead animate-this">
+            For every positive tweet +1 <br>
+            For every neutral tweet +0 <br>
+            For every negative tweet  -1 <br>
+            Normalisation of scores by adjusting values measured on different scales to a notionally common scale. <br>
+            Based on the scores calculated, movies are ranked accordingly.<br>
+            Movie with the highest score is ranked first <br>
+            </p>
+        </div>   
+      </div> <!-- end col-full  -->
+    </div> <!-- end about-wrap  -->
+   </section> <!-- end about -->
+
+  <!-- about
+   ================================================== -->
+   <section id="about" style="background: black;">
+    <div class="row about-wrap">
+      <div class="col-full">
+        <div class="about-profile-bg"></div>
+        <div class="intro">
+          <h3 class="animate-this">Result</h3><br><br>
+          <div class="col-twelve">            
+            <div class="more animate-intro">
+              <div class="col-twelve">
+                <a  class="smoothscroll button stroke" href="http://localhost:8080/#/" target="_blank">Zeppelin</a>
+                <a onclick="mySA('2010')" class="smoothscroll button stroke" href="#2010">2010</a>
+                <a onclick="mySA('2011')" class="smoothscroll button stroke" href="#2011">2011</a>
+                <a onclick="mySA('2012')" class="smoothscroll button stroke" href="#2012">2012</a>
+                <a onclick="mySA('2013')" class="smoothscroll button stroke" href="#2013">2013</a>
+                <a onclick="mySA('2014')" class="smoothscroll button stroke" href="#2014">2014</a>
+                <a onclick="mySA('2015')" class="smoothscroll button stroke" href="#2015">2015</a>
+                <a onclick="mySA('2016')" class="smoothscroll button stroke" href="#2016">2016</a>
+                <a onclick="mySA('2017')" class="smoothscroll button stroke" href="#2017">2017</a>
+              </div> 
+            </div>   
+            <script>
+              function mySA(name) {
+                var e = document.getElementById(name);
+                 if(e.style.display === 'none')
+                    e.style.display = 'block';
+                 else
+                    e.style.display = 'none';
+                }
+            </script> 
+          </div> <!-- end col-twelve --> 
+        </div> <!-- end row --> 
+      </div> <!-- end col-full  -->
+    </div> <!-- end about-wrap  -->
+   </section> <!-- end about -->
+
+<!-- 2010
+   ================================================== -->
+   <section id="2010" style="display:none">
+   <section id="about" >
+    <div class="row about-wrap">
+      <div class="col-full">
+        <div class="about-profile-bg"></div>
+         <div class="intro">
+          <h3 class="animate-this"></h3>      
+          <img src="images/graph/2010.png" alt="" style="width:90%;height:90%;">
+         </div> <!-- end home-content-table -->
+      </div> <!-- end col-full  -->
+    </div> <!-- end about-wrap  -->
+   </section> <!-- end about -->
+ </section>
+
+<!-- 2011
+   ================================================== -->
+   <section id="2011" style="display:none">
+   <section id="about" >
+
+    <div class="row about-wrap">
+      <div class="col-full">
+        <div class="about-profile-bg"></div>
+         <div class="intro">
+          <h3 class="animate-this"></h3>      
+          <img src="images/graph/2011.png" alt="" style="width:90%;height:90%;">
+         </div> <!-- end home-content-table -->
+      </div> <!-- end col-full  -->
+    </div> <!-- end about-wrap  -->
+   </section> <!-- end about -->
+ </section>
+
+ <!-- 2012
+   ================================================== -->
+   <section id="2012" style="display:none">
+   <section id="about" >
+
+    <div class="row about-wrap">
+      <div class="col-full">
+        <div class="about-profile-bg"></div>
+         <div class="intro">
+          <h3 class="animate-this"></h3>      
+          <img src="images/graph/2012.png" alt="" style="width:90%;height:90%;">
+         </div> <!-- end home-content-table -->
+      </div> <!-- end col-full  -->
+    </div> <!-- end about-wrap  -->
+   </section> <!-- end about -->
+ </section>
+
+ <!-- 2013
+   ================================================== -->
+   <section id="2013" style="display:none">
+   <section id="about" >
+
+    <div class="row about-wrap">
+      <div class="col-full">
+        <div class="about-profile-bg"></div>
+         <div class="intro">
+          <h3 class="animate-this"></h3>      
+          <img src="images/graph/2013.png" alt="" style="width:90%;height:90%;">
+         </div> <!-- end home-content-table -->
+      </div> <!-- end col-full  -->
+    </div> <!-- end about-wrap  -->
+   </section> <!-- end about -->
+ </section>
+
+ <!-- 2014
+   ================================================== -->
+   <section id="2014" style="display:none">
+   <section id="about" >
+
+    <div class="row about-wrap">
+      <div class="col-full">
+        <div class="about-profile-bg"></div>
+         <div class="intro">
+          <h3 class="animate-this"></h3>      
+          <img src="images/graph/2014.png" alt="" style="width:90%;height:90%;">
+         </div> <!-- end home-content-table -->
+      </div> <!-- end col-full  -->
+    </div> <!-- end about-wrap  -->
+   </section> <!-- end about -->
+ </section>
+
+ <!-- 2015
+   ================================================== -->
+   <section id="2015" style="display:none">
+   <section id="about" >
+
+    <div class="row about-wrap">
+      <div class="col-full">
+        <div class="about-profile-bg"></div>
+         <div class="intro">
+          <h3 class="animate-this"></h3>      
+          <img src="images/graph/2015.png" alt="" style="width:90%;height:90%;">
+         </div> <!-- end home-content-table -->
+      </div> <!-- end col-full  -->
+    </div> <!-- end about-wrap  -->
+   </section> <!-- end about -->
+ </section>
+
+ <!-- 2016
+   ================================================== -->
+   <section id="2016" style="display:none">
+   <section id="about" >
+    <div class="row about-wrap">
+      <div class="col-full">
+        <div class="about-profile-bg"></div>
+         <div class="intro">
+          <h3 class="animate-this"></h3>      
+          <img src="images/graph/2016.png" alt="" style="width:90%;height:90%;">
+         </div> <!-- end home-content-table -->
+      </div> <!-- end col-full  -->
+    </div> <!-- end about-wrap  -->
+   </section> <!-- end about -->
+ </section>
+
+ <!-- 2017
+   ================================================== -->
+   <section id="2017" style="display:none">
+   <section id="about" >
+    <div class="row about-wrap">
+      <div class="col-full">
+        <div class="about-profile-bg"></div>
+         <div class="intro">
+          <h3 class="animate-this"></h3>      
+          <img src="images/graph/2017.png" alt="" style="width:90%;height:90%;">
+         </div> <!-- end home-content-table -->
+      </div> <!-- end col-full  -->
+    </div> <!-- end about-wrap  -->
+   </section> <!-- end about -->
+ </section>
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
+
+</html>
